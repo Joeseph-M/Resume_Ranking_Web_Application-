@@ -112,7 +112,7 @@ you can then export it as a zip file (default destination is your desktop) and y
 **Results after ranking (in desktop, Ranked with Order)**
 
 
-You can now view the resumes in ranked order back in your dekstop, the candidate that is the most suitable is not at the top. 
+You can now view the resumes in ranked order back in your dekstop, the candidate that is the most suitable are now at the top!. 
 
 ![Resume Ranking Application](images/Ranked_Resumes_In_Desktop.jpg)
 
