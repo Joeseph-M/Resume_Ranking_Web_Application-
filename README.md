@@ -8,7 +8,7 @@ The application extracts text from candidate resumes, compares them against a jo
 
 ### How to run this locally 
 
-1. In VScode, cloe this repository from github 
+1. In VScode, clone this repository from github 
 2. Create a virtual environment:
     python -m venv .venv 
 3. Activate the environment:
