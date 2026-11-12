@@ -35,17 +35,94 @@ Everything is done locally there's no AI or internet needed to run this so Resum
 
 ## Demonstration of the project 
 
-![Resume Ranking Application](Home_Page.jpg)
+Upon step 6, you should see this in your browser. Once here copy and paste your Job Description to the right and open the folder containing your Resumes on the left.
+
+![Resume Ranking Application](images/Home_Page.jpg)
 
 
+**We will use this JD to test :**
+
+## Customer Service Officer -- Test Job Description
+
+#### About the Role
+
+The Customer Service Officer is responsible for delivering a reliable
+and professional customer experience by managing enquiries, order
+requests, quotations, service matters and customer concerns. The role
+involves keeping customers and relevant stakeholders informed about
+order progress, shipment arrangements and potential delays. You will
+work with internal teams to coordinate fulfilment activities, resolve
+service issues and maintain effective customer relationships.
+
+#### Key Responsibilities
+- Respond promptly and professionally to customer enquiries, orders,
+  quotation requests and service-related matters.
+- Manage customer concerns and escalations, ensuring that issues are
+  followed through to resolution.
+- Provide regular updates on order progress, shipment schedules,
+  potential risks and recommended actions to customers and management.
+- Liaise with internal departments to coordinate order processing,
+  delivery arrangements and issue resolution.
+- Develop and maintain positive working relationships with customers,
+  colleagues and senior stakeholders.
+- Prepare and maintain accurate customer documentation, reports and
+  operational records.
+- Follow company procedures, customer requirements, quality guidelines
+  and applicable regulatory standards.
+
+#### About You
+- Diploma or bachelor's degree in Business Administration,
+  Engineering, Operations Management or a related discipline.
+- At least three years of experience in a customer service or customer
+  support position.
+- Strong customer service orientation, with clear written and verbal
+  communication skills.
+- Able to work independently, take initiative and resolve problems
+  effectively.
+- Confident in handling challenging situations, managing conflicts and
+  working with different stakeholders.
+- Well organised, able to prioritise competing tasks and manage time
+  in a busy working environment.
+- Self-motivated, detail-oriented and comfortable working with
+  operational information and reports.
+
+---
+
+**Sample File with test Resumes (Currently unranked and no order)** 
+
+This file of resumes are then parsed into the applicaiton to be ranked, note as of right now they are orderd based on applicaiton datetime, and in real-life you will have 100s or 1000s of such resumes that need to be reviewed. 
+
+![Resume Ranking Application](images/File_with_Resumes.jpg)
 
 
+--- 
+
+**Ranked Resumes**
+
+After running the application you will receive the same Resumes but now with their TF-IDF ranking and which key words in the JD that their resumes are matching to, 
+you can then export it as a zip file (default destination is your desktop) and you can view them in a ranked order now with the most suitable candidate at the top. 
 
 
+![Resume Ranking Application](images/Ranked_Resume_Results.jpg)
 
 
+--- 
 
 
+**Results after ranking (in desktop, Ranked with Order)**
 
 
+You can now view the resumes in ranked order back in your dekstop, the candidate that is the most suitable is not at the top. 
 
+![Resume Ranking Application](images/Ranked_Resumes_In_Desktop.jpg)
+
+
+# Final Note 
+
+- Note this method cannot replace Human Judgment, or an experienced Recruiter's discernment for cultural fit, motivation and purpose this tool is meant to help you not replace your selection criterial and intuition. 
+- Since the main value add of this tool is fast and mass ordering of resumes it's best used in roles that are highly fixed, structured and replicable in their job dutites such as: 
+    - Customer Service Officers, Maintenance Technicians, Drivers, Service Staff etc. 
+- The application still does not accept all file formats so it's possible certain Resumes with older file formats might not get parsed, i've added an error message at the bottom that points these out in the applicaiton 
+- This project is free for use, feel free to drop a star or message me if you'd like a demonstration. 
+
+Cheers! 
