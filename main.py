@@ -14,16 +14,20 @@ from datetime import datetime
 from html.parser import HTMLParser
 from pathlib import Path
 
-from docx import Document 
+from docx import Document
 from flask import Flask, render_template, jsonify, request, send_file
-from pypdf import PdfReader 
+from pypdf import PdfReader
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
-app.config["MAX_CONTENT_LENGHT"] = 100 * 1024 * 1024  # Limited total resume import to ~400mb 
-app.config["MAX_FROM_MEMORY_SIZE"] = 4 * 1024 * 1024  # Limiting JD import to ~4mb 
+app.config["MAX_CONTENT_LENGTH"] = 100 * 1024 * 1024  # Limited total resume import to ~100mb 
+app.config["MAX_FORM_MEMORY_SIZE"] = 4 * 1024 * 1024  # Limiting JD import to ~4mb 
 
-SUPPORTED_EXTENSIONS = {".Pdf", ".doc", "docx", ".txt", ".rtf", ".odt", ".html", ".htm", ".md"}
+SUPPORTED_EXTENSIONS = {
+    ".pdf", ".doc", ".docx", ".txt", ".rtf",
+    ".odt", ".html", ".htm", ".md"
+}
+
 STOP_WORDS = set("""a an and are as at be been being by can did do does for from had has have he her hers 
 him his i if in into is it its job of on or our she that the their them they this to was we were will with 
 you your about across after all also am any apply applicant applicants appropriate able ability based best both business 
