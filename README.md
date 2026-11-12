@@ -33,7 +33,9 @@ The general idea is to remove letters/words that deliver little to no meaning to
 Everything is done locally there's no AI or internet needed to run this so Resumes are safe within the company's / Recruiter's control. 
 
 
+## Demonstration of the project 
 
+![Resume Ranking Application](Home_Page.jpg)
 
 
 
